@@ -1,8 +1,11 @@
 // Mapeamento dos nomes dos arquivos das páginas para os textos correspondentes do menu
 const pageMenuMapping = {
   'index.html': 'Inicio',
-  'projetos.html': 'Projetos',
-  'sobremim.html': 'Sobre Mim'
+  'produtos.html': 'Produtos',
+  'esportes.html': 'Esportes',
+  'ingressos.html': 'Ingressos',
+  'parcerias.html': 'Parcerias',
+  'socio.html': 'Socio'
 };
 
 // Função para destacar o item de menu correspondente à página atual

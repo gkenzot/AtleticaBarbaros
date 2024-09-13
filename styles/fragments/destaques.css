@@ -45,7 +45,7 @@
   margin: 0 0.5em;
 }
 
-.botoes__mais-projetos {
+.botao-unico {
   background-color: var(--bg-3);
   padding: 1em 2em;
   color: var(--txt-color);
@@ -80,7 +80,7 @@
 }
 
 @media screen and (min-width: 576px) {
-  .botoes__mais-projetos {
+  .botao-unico {
     max-width: 35vw;
     margin: 1em auto;
   }
@@ -107,7 +107,7 @@
     margin: 0 auto;
   }
 
-  .botoes__mais-projetos {
+  .botao-unico {
     width: 420px;
   }
 }
