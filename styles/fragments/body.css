@@ -1,6 +1,7 @@
 body {
   background-color: var(--bg-1);
   font: normal normal 400 1rem var(--fonte-principal);
+  overflow: hidden;
 }
 
 .titulo {
