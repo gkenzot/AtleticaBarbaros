@@ -6,6 +6,15 @@ header {
   position: relative;
 }
 
+#toggleButton img {
+  display: flex;
+  align-items: center;
+}
+
+#toggleButton img {
+  height: 1.5rem;
+}
+
 .container {
   display: flex;
   align-items: center;

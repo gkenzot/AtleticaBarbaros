@@ -1,8 +1,10 @@
-// Função para ativar/desativar o Dark Mode e armazenar o estado em um cookie
 function toggleDarkMode() {
   const linkElement = document.querySelector('link[href="../styles/styles.css"]');
-  let darkModeEnabled = linkElement.href.includes('../styles/styles-darkmode.css');
   const toggleButton = document.getElementById('toggleButton');
+  const darkModeImg = toggleButton.querySelector('img');
+  const logoImg = document.querySelector('img.logo__escudo');
+
+  let darkModeEnabled = linkElement.href.includes('../styles/styles-darkmode.css');
 
   // Função para criar ou atualizar um cookie
   function setCookie(name, value, days) {
@@ -29,13 +31,34 @@ function toggleDarkMode() {
     darkModeEnabled = darkModeCookie === 'true';
   }
 
-  // Atualizar o estilo e o estado do Dark Mode e armazenar o estado em um cookie
-  function updateDarkMode() {
+  // Atualizar o estilo da folha de estilos
+  function updateStyle() {
     if (darkModeEnabled) {
       linkElement.href = '../styles/styles-darkmode.css';
     } else {
       linkElement.href = '../styles/styles.css';
     }
+  }
+
+  // Atualizar a imagem do botão de alternância
+  function updateToggleButtonImage() {
+    if (darkModeImg) {
+      darkModeImg.src = darkModeEnabled ? '../img/devIcons/icons8-sol-50.svg' : '../img/devIcons/icons8-dark-50.svg';
+    }
+  }
+
+  // Atualizar a imagem do logo
+  function updateLogoImage() {
+    if (logoImg) {
+      logoImg.src = darkModeEnabled ? '../img/Barbaros-Escrita2-white.png' : '../img/Barbaros-Escrita2-red.png';
+    }
+  }
+
+  // Função principal para atualizar o estado do Dark Mode
+  function updateDarkMode() {
+    updateStyle();
+    updateToggleButtonImage();
+    updateLogoImage();
     setCookie('darkMode', darkModeEnabled, 30); // Armazenar o estado do Dark Mode por 30 dias
   }
 

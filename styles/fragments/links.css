@@ -1,17 +1,26 @@
 .links {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0.5em 0.5em; /* Ajuste o padding conforme necessário */
+  padding: 0.5em 0.5em 2em 0.5em; /* Ajuste o padding conforme necessário */
   box-sizing: border-box;
+  flex-wrap: wrap;
+}
+
+.links__contato {
+  display: flex;
+  justify-content: left;
+  color: blue;
 }
 
 .links a {
   display: flex;
   background-color: var(--bg-2);
   padding: 0.5em 1em;
-  width: 35vw;
+  width: 85%;
   border-radius: 0.5em;
   color: var(--txt-color-2);
   font-weight: 500;
@@ -26,8 +35,17 @@
   padding-right: 0.5em;
 }
 
+.links__contato {
+  justify-content: left;
+}
+
 @media screen and (min-width: 576px) {
+  .links {
+    flex-direction: row;
+  }
+
   .links a {
+    max-width: 380px;
     align-content: center;
   }
 }
@@ -43,6 +61,6 @@
   }
 }
 
-.link a:hover {
+.link2 a:hover {
   text-decoration: underline;
 }
