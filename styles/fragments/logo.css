@@ -1,0 +1,17 @@
+.logo {
+  font-family: var(--fonte-logo);
+  font-weight: 400;
+  font-style: normal;
+  font-size: xx-large;
+  color: var(--bg-2);
+  margin: 0;
+}
+
+.logo span {
+  color: var(--txt-color-2);
+}
+
+.logo__escudo{
+  height: 3rem;
+  padding-right: 1rem;
+}

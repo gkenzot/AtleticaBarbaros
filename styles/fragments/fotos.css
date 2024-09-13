@@ -1,0 +1,44 @@
+.fotos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2px;
+  padding-bottom: 1rem;
+}
+
+@media screen and (min-width: 576px) {
+  .fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .fotos img {
+    max-width: 49%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .fotos img {
+    max-width: 33%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .fotos img {
+    max-width: 25%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fotos img {
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .fotos img {
+    max-width: 400px;
+  }
+}

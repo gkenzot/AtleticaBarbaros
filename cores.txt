@@ -1,0 +1,15 @@
+Bege Luz: #F7D3B7
+Bege: #E5B48C
+Bege Sombra: #A98064
+Bege Escuro: #664838
+Amarelo Luz: #F1C755
+Amarelo: #F0BB31
+Amarelo Sombra: #AB800D
+Bordo Luz: #851B17
+Bordo: #701713
+Bordo Sombra: #50110E
+Preto: #000000
+Branco: #FFFFFF
+Vermelho 2: #7B0000
+Amarelo 2: #FFD700
+Verde Fundo: #416638
