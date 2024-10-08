@@ -4,5 +4,11 @@
   text-align: justify;
   padding: 0.5em 1em 0 1em;
   text-indent: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.sobre__text p {
+  max-width: 1440px;
 }
 
