@@ -39,6 +39,12 @@
   justify-content: left;
 }
 
+.links__disabled {
+  pointer-events: none; 
+  opacity: 0.5;         
+  cursor: default;      
+}
+
 @media screen and (min-width: 576px) {
   .links {
     flex-direction: row;
